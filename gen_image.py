@@ -129,7 +129,7 @@ def main():
                 "intercepted the rest.")
     lines = wrap(d, lead_sum, font(SANS, 20), W - mx - tx - 210)
     draw_wrapped(d, (tx, ly + 156), lines, font(SANS, 20), (225, 228, 235), 27)
-    d.text((tx, ly + lh - 28), "REUTERS  ·  ONE TURN  ·  21 NOV 2026",
+    d.text((tx, ly + lh - 28), "REUTERS  ·  AL JAZEERA  ·  21 NOV 2026",
            font=font(SANS_B, 14), fill=(170, 180, 195))
 
     # ---------------- 2x2 grid (y 468..818) ----------------
@@ -145,18 +145,18 @@ def main():
         ("EUROPE  ·  UKRAINE", "MISSILE HITS",
          "ZELENSKYY'S HOMETOWN",
          "A Russian strike on Kryvyi Rih killed a boy, 7, and a paramedic; "
-         "dozens wounded.",
+         "missiles also fell in Poland.",
          "REUTERS  ·  CNN  ·  ISW", NAVY, "burst"),
-        ("GLOBAL  ·  CLIMATE", "COP31 CLOSE TO",
-         "A DEAL — AT LAST",
-         "Antalya talks ran past deadline over fossil fuels; the president "
-         "says a final deal is close.",
-         "REUTERS", (34, 84, 60), "globe"),
+        ("GLOBAL  ·  CLIMATE", "COP31 TALKS RUN",
+         "PAST DEADLINE",
+         "Antalya talks went into overtime over fossil fuels, with no deal "
+         "as Saturday ended.",
+         "ASSOCIATED PRESS  ·  REUTERS", (34, 84, 60), "globe"),
         ("GLOBAL  ·  MARKETS", "AI SELL-OFF ERASES",
          "2026 GAINS",
-         "Nasdaq fell 5.3% in its worst week since March 2020; the S&P 500 "
-         "entered correction.",
-         "SENTINEL  ·  HORIZON", GOLD, "chart"),
+         "Nasdaq plunged 10% for the week, erasing its 2026 gains; the "
+         "S&P 500 entered correction.",
+         "MARKETWATCH  ·  BLOOMBERG", GOLD, "chart"),
     ]
     for i, (kick, h1, h2, summ, src, color, icon) in enumerate(cards):
         cx = mx + (i % 2) * (gw + 16)
@@ -192,14 +192,14 @@ def main():
     bh = 112
     bw = (W - 2 * mx - 16) // 2
     strip = [
-        ("GULF OF FINLAND", "RUSSIAN SHIP ABLAZE",
-         "The Sparta II burned after a drone strike; its crew evacuated as "
-         "it drifted into Finnish waters.",
-         "REUTERS", NAVY),
+        ("UNITED STATES  ·  CYBER", "FBI CRIME DATABASE HACKED",
+         "Hackers breached the FBI's National Crime Information Center "
+         "database; the FBI is investigating.",
+         "CNN  ·  AP", NAVY),
         ("HEALTH  ·  BRAZIL  —  A HOPEFUL NOTE",
-         "DENGUE CUT BY 69% IN CHILDREN",
-         "Specially bred mosquitoes cut dengue in children by about "
-         "two-thirds in a major study.",
+         "DENGUE & CHIKUNGUNYA CUT 69%",
+         "Wolbachia mosquitoes cut dengue and chikungunya infections in "
+         "children by about 69%.",
          "ASSOCIATED PRESS", (34, 110, 60)),
     ]
     for i, (kick, head, summ, src, color) in enumerate(strip):
@@ -222,10 +222,10 @@ def main():
     d.line([mx, fy, W - mx, fy], fill=LINE, width=2)
     d.text((mx, fy + 9),
            "Sources: Reuters · Associated Press · CNN · Institute for the Study "
-           "of War · UKMTO",
+           "of War",
            font=font(SANS, 15), fill=MUTED)
     d.text((mx, fy + 31),
-           "All events of Saturday 21 November 2026. Drawn entirely with code.",
+           "World news reported on Saturday, 21 November 2026. Drawn entirely with code.",
            font=font(SANS_B, 15), fill=INK)
 
     img.save(OUT, format="PNG")

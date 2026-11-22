@@ -23,10 +23,12 @@ Iran saying it struck U.S. bases in Bahrain, with Bahrain reporting a civilian
 site burned, no one hurt, and its air defences intercepting the rest. The six
 other stories cover Mexico's capture of FBI most-wanted cartel boss
 "El Chapo Isidro", a Russian missile strike on Zelenskyy's hometown Kryvyi
-Rih, the COP31 climate talks in Antalya running past their deadline, the AI
-stock sell-off erasing the Nasdaq's 2026 gains, a Russian cargo ship ablaze
-in the Gulf of Finland after a drone strike, and a hopeful note from Brazil,
-where specially bred mosquitoes cut dengue in children by about 69%. Every
+Rih (with missiles also falling in Poland), the COP31 climate talks in
+Antalya running past their deadline with no deal as Saturday ended, the AI
+stock sell-off (Nasdaq down 10% for the week, erasing its 2026 gains),
+hackers breaching the FBI's National Crime Information Center database,
+and a hopeful note from Brazil, where Wolbachia mosquitoes cut dengue and
+chikungunya infections in children by about 69%. Every
 fact on the image was checked against at least two independent reports — see
 `RESEARCH.md` for the sources and verification notes. The image is drawn by
 `gen_image.py` (Python PIL, no AI image generator, no copyrighted images);
